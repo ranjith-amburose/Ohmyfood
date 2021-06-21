@@ -1,0 +1,80 @@
+//index Page
+@keyframes fillheart {
+  0% {opacity: 0.2;}
+  0% {transform: scaleY(0);}
+  17% {transform: scaleY(.18);}
+  24% {transform: scaleY(.4);}
+  30% {opacity: 1;}
+  46% {transform: scaleY(.81);}
+  100% {transform: scaleY(1);}
+}
+
+//.restaurant (Scale from 0% to 100%)
+@keyframes scale-in {
+  from {transform: scale(0);
+        transform-origin: center;
+        opacity: 0.5;}
+  to {transform: scale(1);
+      transform-origin: center;
+      opacity: 1;}
+}
+
+@keyframes fade-In {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+// Menu Page (Menu-List) Fade-In Animiations
+//Slide-in
+
+@keyframes Slide-In {
+  from {opacity: 0;
+    transform: translateY(10px);}
+  to {
+    transform: translateY(0px);}
+}
+
+//For Mouse In Hover
+@keyframes fontawesome-In {
+  from{ right:-135px}
+  to { right: 0px;}
+}
+//For Mouse-Out
+@keyframes fontawesome-Out{
+  from {right: 0px;}
+  to { right: -135px;}
+}
+  
+
+// Loader FadeOut Animiation
+@keyframes FadeOut {
+  from{
+    opacity: 1;
+    visibility: visible;
+  }
+  to{
+    opacity: 0;
+    visibility: hidden;
+    z-index: -1!important;
+    display: none;
+  } 
+}
+
+//Menu-items Font Awesome Rotation Animiation
+
+@keyframes rotate{
+  from{ transform: rotate(180deg);}
+  to { transform: rotate(360deg);}
+}
+
+// Loader Rotating Animiation
+@keyframes rotating {
+  50% {
+      transform: rotate(calc(180deg * var(--direction)));
+  }
+
+  100% {
+      transform: rotate(calc(360deg * var(--direction)));
+  }
+}
+   

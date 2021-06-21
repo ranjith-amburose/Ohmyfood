@@ -1,0 +1,637 @@
+@include mobile{
+  
+  @import "../utilities/functions";
+  @import "../utilities/animiations";
+  @import "../layout/footer";
+
+  header{
+    @include flex-center;
+  }
+
+  #logo-1{
+    margin: 20px 90px;
+    height: 3em;
+    width: 250px;
+  }
+
+  .logo-nav{
+    i.fas.fa-arrow-left{
+      color: $text-color;
+      &:hover{
+        color: $tertiary-color;
+        }
+      }
+    }
+
+  article .banner{
+      width: 100%;
+      height: 300px;
+      border-radius: 0px;
+      position: relative;
+    }
+
+    .menu-card{
+      position: relative;
+      margin-top: -50px;
+      width: 100%;
+      background-color: $bg-card;
+      padding: 50px 0px;
+      border-radius: 50px 50px 0px 0px;
+
+      .menu-head{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+
+      h1{
+        width: 85%;
+        padding: 20px 10px;
+      }//h1
+      }// menu-head
+
+      .menu-h3{
+        padding: 5px 0px;
+        margin: 40px 0px 5px 20px;
+        text-transform: uppercase; 
+        position: relative;
+
+        &:before {
+          content : "";
+          position: absolute;
+          left: 0;
+          top: 30px;
+          border-bottom: 5px solid $tertiary-color;
+          width  : 5px;
+          width : 13%;  
+        }
+        }
+
+        .center-card{
+          @include flex-center;
+        }
+
+        .menu-list{
+          @include flex-start;
+          margin: 10px 0px;
+          padding: 30px 0px;
+          background-color: $bg-color;
+          border-radius: 20px;
+          width: 90%;
+          box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3);
+          position: relative;
+          overflow: hidden;
+          animation: Slide-In 3s ease-in-out;
+
+          .description{
+            padding-left: 10px;
+            width: 85%;
+          } //description
+
+          h4{
+            padding-bottom: 5px;
+          }//h4
+
+          .price{
+            width: 10%;
+            font-weight: bold;  
+          }//.price
+
+          .check {
+            display: flex;
+            position: absolute;
+            justify-content: center;
+            align-items: center;
+            color:$bg-color;
+            background-color: $tertiary-color;
+            height: 100%;
+            width: 20%;
+            top: 0px;
+            border-radius: 0px 20px 20px 0px;
+            right: -90px;
+          }//check  
+
+          .WrapIcon i{
+            transform: rotate(0deg);
+           font-size: 24px;
+            }//.WrapIcorn i
+          
+
+       &:hover {
+        cursor: pointer;
+
+        .description{
+          width: 70%;
+          transition: 700ms ease-in-out;  
+       }// hover .description
+       .check{
+        right: 0px;
+        transition: 700ms ease-in-out;
+      }//hover check-circle
+
+      .WrapIcon i{
+          transform: rotate(360deg);
+          transition-duration: 1.2s;
+        }//.WrapIcon i 
+
+      } //hover
+      }//.menu-list
+      
+       //Menu List Animiation
+       .menu-list:nth-child(1){
+        animation-delay: 0.5s;
+      }
+      
+      .menu-list:nth-child(2){
+        animation-delay: 1s;
+      }
+      
+      .menu-list:nth-child(3){
+        animation-delay: 1.5s;
+      }
+      
+      .menu-list:nth-child(4){
+        animation-delay: 2s;
+      }
+
+      .menu-list:nth-child(5){
+        animation-delay: 2.5s;
+      }
+    }//Menu Card
+}//@include mobile
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+@include tablet{
+  .wrapper{
+    width: 700px;
+   padding-left: 0px;
+   padding-right: 0px;
+   margin: 0px auto;
+   background-color: $bg-color;
+  
+   .header-nav{
+    display: flex;
+    flex-direction: row!important;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    padding: 20px 0px;
+
+    .logo-nav{
+      position: absolute;
+      left: 20px;
+      font-size: 30px;
+      i.fas.fa-arrow-left{
+        color: $text-color;
+        &:hover{
+          color: $tertiary-color;
+        }//hover
+      }//arrow
+    }//.logo-nav
+  }//#header-nav
+
+  .banner{
+    width: 700px;
+    height: 250px;
+  }//banner
+
+  .menu-card{
+    background-color:$bg-light;
+    position: relative;
+    margin-top: -40px;
+    border-radius: 30px 30px 0px 0px;
+    width: 7;
+  }//menu-card
+
+  .menu-head{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 30px;
+  }//menu-head
+
+  h1{
+    padding: 30px 10px;
+    letter-spacing: 1px;
+  }//h1
+
+   // Border Bottom for H3 
+   .menu-h3{
+    padding: 5px 0px;
+    margin: 40px 0px 5px 20px;
+    text-transform: uppercase; 
+    position: relative;
+
+    &:after {
+      content : "";
+      position: absolute;
+      left: 0;
+      top: 30px;
+      border-bottom: 5px solid $tertiary-color;
+      width  : 5px;
+      width : 6%;
+    }//before
+    } // Border Bottom for H3 
+
+    .center-card{
+      @include flex-center;
+      flex-direction: column!important;
+      animation: Slide-In 2s ease-in-out;
+    }
+
+    .menu-list{
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      background-color: $bg-light;
+      padding: 30px 20px;
+      width: 70%;
+      margin: 10px 0px;
+      border-radius: 20px;
+      box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3);
+      position: relative;
+      overflow: hidden;
+     
+  
+      .description{
+        width: 80%;
+      }
+      h4{
+        padding-bottom: 10px;
+      }
+  
+      .price{
+        font-weight: bolder;
+        padding: 0px 10px;
+      }
+  
+      .check {
+        display: flex;
+        position: absolute;
+        top: 0px;
+        width: 20%;
+        height: 100%;
+        justify-content: center;
+        align-items: center;
+        border-radius: 0px 20px 20px 0px;
+        right: -135px;
+        background-color: $tertiary-color;
+        color: $text-white;
+        font-size: 25px;
+       
+      }
+      .WrapIcon i{
+        transform: rotate(0deg);
+      }
+
+    &:hover{
+      .description{
+        width: 70%;
+        transition: 700ms ease-in-out;
+      }
+      .check {
+        right: 0px;
+        transition: 700ms ease-in-out; 
+        }
+        .WrapIcon i{
+          transform: rotate(360deg);
+          transition-duration: 1.2s;
+        }
+      }//hover
+  
+      &::after{
+        .description{
+          width: 80%;
+          transition: 700ms ease-in-out;
+  
+          .check i{
+            right: -135px;
+            transition: 700ms ease-in-out;
+        }//.check i
+      }//.description 
+    }//after
+    }//.menu-list
+
+    footer.footer-menu nav ul li{
+      padding: 10px 15px;
+    }
+
+    footer.footer-menu nav ul li a .fas{
+      padding-right: 10px;
+    }
+
+  }//Wrapper
+}//Tablet
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+@include laptop {
+
+  .wrapper{
+    width: 850px;
+    padding-left: 0px;
+    padding-right: 0px;
+   margin: 0px auto;
+    background-color: $bg-light;
+  
+    .header-nav{
+      display: flex;
+      flex-direction: row!important;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      padding: 20px 0px;
+  
+      .logo-nav{
+        position: absolute;
+        left: 20px;
+        font-size: 30px;
+        i.fas.fa-arrow-left{
+          color: $text-color;
+          &:hover{
+            color: $tertiary-color;
+          }//hover
+        }//arrow
+      }//.logo-nav
+    }//#header-nav
+
+  .banner{
+      width: 850px;
+      height: 350px;
+    }//banner
+
+    .menu-card{
+      background-color:$bg-light;
+      position: relative;
+      margin-top: -50px;
+      border-radius: 40px 40px 0px 0px;
+    }//menu-card
+
+    .menu-head{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 20px 30px;
+    }//menu-head
+
+    h1{
+      padding: 20px 10px;
+      letter-spacing: 2px;
+    }//h1
+
+    // Border Bottom for H3 
+  .menu-h3{
+    padding: 5px 0px;
+    margin: 40px 0px 5px 20px;
+    text-transform: uppercase; 
+    position: relative;
+
+    &:after {
+      content : "";
+      position: absolute;
+      left: 0;
+      top: 30px;
+      border-bottom: 5px solid $tertiary-color;
+      width  : 5px;
+      width : 6%;
+    }//before
+    } // Border Bottom for H3 
+
+    .center-card{
+      @include flex-center;
+      flex-direction: column!important;
+      animation: Slide-In 2s ease-in-out;
+    }
+
+    .menu-list{
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      background-color: $bg-light;
+      padding: 30px 20px;
+      width: 70%;
+      margin: 10px 0px;
+      border-radius: 20px;
+      box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3);
+      position: relative;
+      overflow: hidden;
+     
+  
+      .description{
+        width: 80%;
+      }
+      h4{
+        padding-bottom: 10px;
+      }
+  
+      .price{
+        font-weight: bolder;
+        padding: 0px 10px;
+      }
+  
+      .check {
+        display: flex;
+        position: absolute;
+        top: 0px;
+        width: 20%;
+        height: 100%;
+        justify-content: center;
+        align-items: center;
+        border-radius: 0px 20px 20px 0px;
+        right: -135px;
+        background-color: $tertiary-color;
+        color: $text-white;
+        font-size: 25px;
+       
+      }
+      .WrapIcon i{
+        transform: rotate(0deg);
+      }
+
+    &:hover{
+      .description{
+        width: 70%;
+        transition: 700ms ease-in-out;
+      }
+      .check {
+        right: 0px;
+        transition: 700ms ease-in-out; 
+        }
+        .WrapIcon i{
+          transform: rotate(360deg);
+          transition-duration: 1.2s;
+        }
+      }//hover
+  
+      &::after{
+        .description{
+          width: 80%;
+          transition: 700ms ease-in-out;
+  
+          .check i{
+            right: -135px;
+            transition: 700ms ease-in-out;
+        }//.check i
+      }//.description 
+    }//after
+    }//.menu-list
+
+
+
+
+  }//Wrapper
+}//@include laptop
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+@include desktop {
+
+  .wrapper{
+    width: 940px;
+    padding-left: 0px;
+    padding-right: 0px;
+    margin: 0px auto;
+    background-color: $bg-light;
+
+    .header-nav{
+      display: flex;
+      flex-direction: row!important;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      padding: 20px 0px;
+  
+      .logo-nav{
+        position: absolute;
+        left: 20px;
+        font-size: 30px;
+        i.fas.fa-arrow-left{
+          color: $text-color;
+          &:hover{
+            color: $tertiary-color;
+          }//hover
+        }//arrow
+      }//.logo-nav
+    }//#header-nav
+
+    .banner{
+      width: 940px;
+      height: 350px;
+    }//banner
+
+    .menu-card{
+      background-color:$bg-light;
+      position: relative;
+      margin-top: -50px;
+      border-radius: 40px 40px 0px 0px;
+    }//menu-card
+
+    .menu-head{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 20px 30px;
+    }//menu-head
+
+    h1{
+      padding: 20px 10px;
+      letter-spacing: 2px;
+    }//h1
+
+     // Border Bottom for H3 
+  .menu-h3{
+    padding: 5px 0px;
+    margin: 40px 0px 5px 20px;
+    text-transform: uppercase; 
+    position: relative;
+
+    &:after {
+      content : "";
+      position: absolute;
+      left: 0;
+      top: 30px;
+      border-bottom: 5px solid $tertiary-color;
+      width  : 5px;
+      width : 6%;
+    }//before
+    } // Border Bottom for H3 
+
+    .center-card{
+      @include flex-center;
+      flex-direction: column!important;
+      animation: Slide-In 2s ease-in-out;
+    }
+
+    .menu-list{
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      background-color: $bg-light;
+      padding: 30px 20px;
+      width: 70%;
+      margin: 10px 0px;
+      border-radius: 20px;
+      box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3);
+      position: relative;
+      overflow: hidden;
+     
+  
+      .description{
+        width: 80%;
+      }
+      h4{
+        padding-bottom: 10px;
+      }
+  
+      .price{
+        font-weight: bolder;
+        padding: 0px 10px;
+      }
+  
+      .check {
+        display: flex;
+        position: absolute;
+        top: 0px;
+        width: 20%;
+        height: 100%;
+        justify-content: center;
+        align-items: center;
+        border-radius: 0px 20px 20px 0px;
+        right: -135px;
+        background-color: $tertiary-color;
+        color: $text-white;
+        font-size: 25px;
+       
+      }
+      .WrapIcon i{
+        transform: rotate(0deg);
+      }
+
+    &:hover{
+      .description{
+        width: 70%;
+        transition: 700ms ease-in-out;
+      }
+      .check {
+        right: 0px;
+        transition: 700ms ease-in-out; 
+        }
+        .WrapIcon i{
+          transform: rotate(360deg);
+          transition-duration: 1.2s;
+        }
+      }//hover
+  
+      &::after{
+        .description{
+          width: 80%;
+          transition: 700ms ease-in-out;
+  
+          .check i{
+            right: -135px;
+            transition: 700ms ease-in-out;
+        }//.check i
+      }//.description 
+    }//after
+    }//.menu-list
+
+  }//Wrapper
+}//@include Desktop

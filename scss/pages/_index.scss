@@ -1,0 +1,687 @@
+@include mobile {
+
+  @import "../utilities/animiations";
+
+    header, main, footer {
+      animation: fade-In 5s ease-in; 
+    }
+
+  .header-menu{
+    margin: auto;
+  }
+    .logo{
+      @include flex-center;
+    }
+
+    #logo{
+      margin-top: 20px;
+      height: 3em;
+      width: 250px;
+    }
+
+    .info{
+      @include flex-center-column;
+      background-color: $bg-card;
+      padding: 20px 0px;
+      text-align: center;
+      align-content: center;
+      width: 100%;
+
+      h1{
+        margin-top: 20px;
+        padding: 20px 0px;
+      }
+
+      p{
+        padding: 20px;
+        text-align: center;
+      }
+    }
+  
+
+   .header-menu ul{
+     visibility: hidden;
+   }
+
+  img {
+    width: 425px;
+    height: 250px;
+    opacity: 1;
+    border-radius: 20px 20px 0px 0px;
+    &:hover{opacity: 0.7;}
+  }
+
+  .location-nav{
+    width: 100%;
+    background-color: $bg-head;
+    padding: 20px 10px;
+    @include flex-center;
+
+    h4 {
+      padding: 0px 10px;   
+    }
+  }
+
+.header-menu ul{
+  display: inline;
+}
+
+#works{
+ @include flex-center;
+ padding: 50px 0px;
+ & h3{
+  width: 480px;
+  padding-left: 20px;
+  margin-bottom: 20px;  
+ }
+}
+
+section{
+  background-color: $bg-card;
+  padding: 60px 0px;
+
+h3 {
+  padding: 20px;
+}
+
+.home-resto{
+  @include flex-center;
+  
+}
+
+.restaurant{
+  position: relative;
+  background-color: $bg-color;
+  padding-bottom: 10px;
+  margin-bottom: 40px;
+  border-radius: 20px;
+  width: 425px;  
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3);
+  transition: all 0.9s ease-in-out;
+  animation: scale-in 6s ease-in;
+
+  &:hover img{
+    opacity: 0.7;
+  }
+
+  span{
+    position: absolute;
+    top: 20px;
+     left: 315px;
+    background-color: $tertiary-color;
+    padding: 15px 30px;
+    color:darken($tertiary-color, 50%);
+    font-weight: bold;
+    border-radius: 5px;
+  }
+  .resto-info{
+    @include flex-start;
+    padding: 10px 10px;
+
+    
+    h4, h5{
+      padding: 5px 0px;
+      width: 336px;
+    }
+    //Index Page - Heart Icons
+    .heart-trnas{
+
+      i.far.fa-heart.fa-lg.fa-2x.full_heart{
+        transform: translate(35px, 0px);
+      }
+      i.fas.fa-heart.fa-lg.fa-2x.empty_heart {
+        color: transparent;
+      }
+      &:hover i.fas.fa-heart.fa-lg.fa-2x.empty_heart{
+      background: linear-gradient($primary-color 0%, $secondary-color 100%);
+      background-clip: inherit;
+   
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      transition: color 0.9s; 
+      animation: fillheart 400ms cubic-bezier(0,.5,.99,.04) forwards;
+      padding: 3px 0px;
+      }
+      &:hover i.far.fa-heart.fa-lg.fa-2x.full_heart{
+        color: transparent;
+      }
+    }//.heart-trnas
+    }//.resto-info
+    }//.restaurant
+  }//Section 
+}//@include mobile
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+@include tablet {
+
+  .wrapper{
+   width: 700px;
+   padding-left: 0px;
+   padding-right: 0px;
+   margin: 0px auto;
+   background-color: $bg-color;
+
+  nav {
+    display: flex;
+    flex-direction: column;
+  }
+
+  img#logo{
+    width: 50%;
+    padding-left: 10px;
+    padding-bottom: 10px;
+    opacity: 1;
+    &:hover{
+      opacity: 0.7;
+    }
+  }
+
+  nav{
+    display: flex;
+    flex-direction: row;
+    width: auto;
+    padding-top: 20px;
+    justify-content: space-between;
+    
+    ul{
+      display: inline-flex;
+      padding-top: 5px;
+    }
+
+    li{
+      list-style-type: none;
+      padding: 0px 5px;
+      margin-right: 10px;
+    }
+    a{
+      text-decoration: none;
+      color: $text-color;
+      &:hover{
+        color: $primary-color;
+      }
+    }
+  }//nav
+
+  .location-nav{
+    @include flex-center;
+    padding: 15px;
+    background-color: $bg-head;
+
+    h4{
+      padding: 0px 10px;
+    }
+  }//.location-nav
+
+
+  .info{
+    @include flex-center-column;
+
+    h1{
+      padding: 30px 0px;
+    }
+
+    p{
+      padding-bottom: 20px;
+    }
+  }//.info
+
+  .main-button{
+    margin-bottom: 40px;
+  }
+
+  #works{
+
+    h3{
+      @include flex-center;
+      padding: 30px 10px;
+    }
+
+    span{
+      top: 35px;
+      left: 45px;
+    }
+
+    button{
+      margin: 15px;
+    }
+  }//#works
+
+  #resto{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }//#resto
+
+  .restaurant img{
+    width: 300px;
+    height: 200px;
+    border-radius: 10px 10px  0px 0px;
+  }
+
+  .restaurant{
+    position: relative;
+    background-color: $bg-color;
+    padding: 10px;
+    margin: 15px;
+    border-radius: 20px;
+    width: 320px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease-in-out;
+    animation: scale-in 3s ease-in;
+  
+    &:hover img{
+      opacity: 0.7;
+    }
+    span{
+      position: absolute;
+      top: 30px;
+      left: 210px;
+      background-color: $tertiary-color;
+      padding: 15px 30px;
+      color: darken($tertiary-color, 50%);
+      font-weight: bold;
+      border-radius: 5px;
+    }
+
+    .resto-info{
+      display: flex;
+      h4{
+        padding: 10px 0px;
+        width: 200px;
+      }
+      .heart-trnas{
+        padding: 10px 10px;
+        flex-direction: row!important;
+        justify-content: flex-end;
+
+        i.far.fa-heart.fa-lg.fa-2x.full_heart{
+          transform: translate(35px, 0px);
+        }
+        i.fas.fa-heart.fa-lg.fa-2x.empty_heart {
+          color: transparent;
+        }
+
+        &:hover i.fas.fa-heart.fa-lg.fa-2x.empty_heart{
+          background: linear-gradient($primary-color 0%, $secondary-color 100%);
+          background-clip: inherit;
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+          transition: color 0.9s; 
+          animation: fillheart 400ms cubic-bezier(0,.5,.99,.04) forwards;
+          padding: 3px 0px;
+          }
+          &:hover i.far.fa-heart.fa-lg.fa-2x.full_heart{
+            color: transparent;
+          }
+
+          #footer nav li{
+            padding: 10px 25  px 10px 10px;
+          }
+
+
+      }//.heart-trans
+   
+    }//.resto-info
+  }//restaurant
+
+  }//wrapper
+}//@include Tablet
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+@include laptop {
+
+  @import "../pages/loader";
+  @import "../utilities/animiations";
+
+    .wrapper{
+      width: 850px;
+      padding-left: 0px;
+      padding-right: 0px;
+     margin: 0px auto;
+      background-color: $bg-light;
+    }
+
+    nav {
+      display: flex;
+      flex-direction: column;
+    }
+
+    img#logo{
+      width: 50%;
+      padding-left: 10px;
+      padding-bottom: 10px;
+      opacity: 1;
+      &:hover{
+        opacity: 0.7;
+      }
+    }
+
+    nav{
+      display: flex;
+      flex-direction: row;
+      width: auto;
+      padding-top: 20px;
+      justify-content: space-between;
+      
+      ul{
+        display: inline-flex;
+        padding-top: 5px;
+      }
+  
+      li{
+        list-style-type: none;
+        padding: 0px 25px;
+      }
+      a{
+        text-decoration: none;
+        color: $text-color;
+        &:hover{
+          color: $primary-color;
+        }
+      }
+    }//nav
+
+    .location-nav{
+      @include flex-center;
+      padding: 15px;
+      background-color: $bg-head;
+  
+      h4{
+        padding: 0px 10px;
+      }
+    }//.location-nav
+
+    .info{
+      @include flex-center-column;
+  
+      h1{
+        padding: 30px 0px;
+      }
+  
+      p{
+        padding-bottom: 20px;
+      }
+    }//.info
+
+    .main-button{
+      margin-bottom: 50px;
+    }
+
+    #works{
+
+      h3{
+        @include flex-center;
+        padding: 30px 10px;
+      }
+  
+      span{
+        top: 40px;
+        left: 60px;
+      }
+  
+      button{
+        margin: 20px;
+      }
+    }//#works
+
+    section h3{
+      @include flex-center;
+      padding: 30px 0px;
+    }
+
+    #resto{
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+    }//#resto
+  
+    .restaurant img{
+      width: 375px;
+      height: 225px;
+      border-radius: 10px 10px  0px 0px;
+    }
+
+    .restaurant{
+      position: relative;
+      background-color: $bg-color;
+      padding: 10px;
+      margin: 15px;
+      border-radius: 20px;
+      width: 395px;
+      box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3);
+      transition: all 0.3s ease-in-out;
+      animation: scale-in 3s ease-in;
+    
+      &:hover img{
+        opacity: 0.7;
+      }
+      span{
+        position: absolute;
+        top: 30px;
+        left: 275px;
+        background-color: $tertiary-color;
+        padding: 15px 30px;
+        color: darken($tertiary-color, 50%);
+        font-weight: bold;
+        border-radius: 5px;
+      }
+  
+      .resto-info{
+        display: flex;
+        h4{
+          padding: 10px 0px;
+          width: 270px;
+        }
+        .heart-trnas{
+          padding: 10px 10px;
+          flex-direction: row!important;
+          justify-content: flex-end;
+  
+          i.far.fa-heart.fa-lg.fa-2x.full_heart{
+            transform: translate(35px, 0px);
+          }
+          i.fas.fa-heart.fa-lg.fa-2x.empty_heart {
+            color: transparent;
+          }
+  
+          &:hover i.fas.fa-heart.fa-lg.fa-2x.empty_heart{
+            background: linear-gradient($primary-color 0%, $secondary-color 100%);
+            background-clip: inherit;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            transition: color 0.9s; 
+            animation: fillheart 400ms cubic-bezier(0,.5,.99,.04) forwards;
+            padding: 3px 0px;
+            }
+            &:hover i.far.fa-heart.fa-lg.fa-2x.full_heart{
+              color: transparent;
+            }
+  
+  
+        }//.heart-trans
+     
+      }//.resto-info
+    }//restaurant
+  
+
+}//@include laptop
+
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+@include desktop{
+
+  @import "../pages/loader";
+  @import "../utilities/animiations";
+
+.wrapper{
+  width: 940px;
+  padding-left: 0px;
+  padding-right: 0px;
+  margin: 0px auto;
+  background-color: $bg-light;
+
+  nav {
+    display: flex;
+    flex-direction: column;
+  }
+
+  img#logo{
+    width: 50%;
+    padding-left: 10px;
+    padding-bottom: 10px;
+    opacity: 1;
+    &:hover{
+      opacity: 0.7;
+    }
+  }
+
+  nav{
+    display: flex;
+    flex-direction: row;
+    width: auto;
+    padding-top: 20px;
+    justify-content: space-between;
+    
+    ul{
+      display: inline-flex;
+      padding-top: 5px;
+    }
+
+    li{
+      list-style-type: none;
+      padding: 0px 25px;
+    }
+    a{
+      text-decoration: none;
+      color: $text-color;
+      &:hover{
+        color: $primary-color;
+      }
+    }
+  }//nav
+
+  .location-nav{
+    @include flex-center;
+    padding: 15px;
+    background-color: $bg-head;
+
+    h4{
+      padding: 0px 10px;
+    }
+  }//.location-nav
+
+  .info{
+    @include flex-center-column;
+
+    h1{
+      padding: 30px 0px;
+    }
+
+    p{
+      padding-bottom: 20px;
+    }
+  }//.info
+
+  .main-button{
+    margin-bottom: 50px;
+  }
+
+  #works{
+
+    h3{
+      @include flex-center;
+      padding: 30px 10px;
+    }
+
+    span{
+      top: 40px;
+      left: 70px;
+    }
+
+    button{
+      margin: 20px;
+    }
+  }//#works
+
+  section h3{
+    @include flex-center;
+    padding: 30px 0px;
+  }
+
+  #resto{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }//#resto
+
+  .restaurant img{
+    width: 420px;
+    height: 250px;
+    border-radius: 10px 10px  0px 0px;
+  }
+
+  .restaurant{
+    position: relative;
+    background-color: $bg-color;
+    padding: 10px;
+    margin: 15px;
+    border-radius: 20px;
+    width: 440px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease-in-out;
+    animation: scale-in 3s ease-in;
+  
+    &:hover img{
+      opacity: 0.7;
+    }
+    span{
+      position: absolute;
+      top: 30px;
+      left: 300px;
+      background-color: $tertiary-color;
+      padding: 15px 30px;
+      color: darken($tertiary-color, 50%);
+      font-weight: bold;
+      border-radius: 5px;
+    }
+
+    .resto-info{
+      display: flex;
+      h4{
+        padding: 10px 0px;
+        width: 330px;
+      }
+      .heart-trnas{
+        padding: 10px 10px;
+        flex-direction: row!important;
+        justify-content: flex-end;
+
+        i.far.fa-heart.fa-lg.fa-2x.full_heart{
+          transform: translate(35px, 0px);
+        }
+        i.fas.fa-heart.fa-lg.fa-2x.empty_heart {
+          color: transparent;
+        }
+
+        &:hover i.fas.fa-heart.fa-lg.fa-2x.empty_heart{
+          background: linear-gradient($primary-color 0%, $secondary-color 100%);
+          background-clip: inherit;
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+          transition: color 0.9s; 
+          animation: fillheart 400ms cubic-bezier(0,.5,.99,.04) forwards;
+          padding: 3px 0px;
+          }
+          &:hover i.far.fa-heart.fa-lg.fa-2x.full_heart{
+            color: transparent;
+          }
+
+
+      }//.heart-trans
+   
+    }//.resto-info
+  }//restaurant
+
+}//.wrapper
+}//@include desktop

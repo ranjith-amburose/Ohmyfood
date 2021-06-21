@@ -1,0 +1,47 @@
+footer.footer-menu{
+  background-color: $bg-footer;
+  color: $text-white;
+  padding: 50px 20px;
+   h2{
+    font-family: "Shrikhand", cursive;
+    margin-bottom: 20px;
+    padding-left: 10px;
+    letter-spacing: 2px;
+   }
+  nav{
+    padding-left: 10px;
+    ul{
+      list-style-type: none;
+      li{
+        padding: 10px 30px;
+      a{
+        cursor: pointer;
+        text-decoration: none;
+        color: $text-white;
+
+        .fas.fa-utensils{
+          padding-right: 20px;
+        }
+        .fas.fa-hands-helping{
+          padding-right: 15px;
+        }
+      }
+    }
+   }
+  }
+}
+
+
+#footer nav{
+  background-color: $bg-footer;
+  padding: 0px;
+
+  i{
+    padding-right: 5px;
+  }
+  li{
+    padding: 10px 50px 10px 10px;
+  }
+}
+
+

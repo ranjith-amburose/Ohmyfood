@@ -1,0 +1,40 @@
+$primary-color: #9356DC;
+$secondary-color: #FF79DA;
+$tertiary-color: #99E2D0;
+$bg-color: #f3f3f3;
+$bg-head: #c2c2c2;
+$bg-card: #dadada;
+$bg-light: #e5e5e5;
+$text-color: #171717;
+$bg-footer : #0f0f0f;
+$text-white : #ffffff;
+$color-btn: linear-gradient(to left top, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da);
+
+//Font Weight
+$font-weights: (
+  "normal" : 400,
+  "medium" : 550,
+  "bold" : 700
+);
+// h6 starts at $base-font-size 
+// headings grow from h6 to h1 by $heading-scale
+$base-font-size: 12px;
+$heading-scale: 4px; // amount of px headings grow from h6 to h1
+
+//Button Variables
+$btn-padding: 15px 30px;
+$btn-margin: 20px;
+$btn-margin-large: 40px 0px;
+$border-radius: 30px;
+$btn-medium-padding: 20px 120px;
+$btn-large-padding: 30px 70px;
+$btn-large-margin: 15px 0px;
+$border-radius-large: 20px;
+$btn-hover-color:#e9ddf8;
+
+//Media Queries
+$mobile: "(max-width:480px)";
+$tablet: "(min-width: 768px)";
+$desktop: "(min-width: 1024px)";
+
+$wrap : 940px;

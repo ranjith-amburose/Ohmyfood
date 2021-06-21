@@ -41,7 +41,5 @@ the user is redirected to the menu page.
 
 ## No Frameworks Used:
 - Responsive Restaurant website made of HTML and SASS (@Keyframes and Transitions for Animiations).
-- 
-
     
  

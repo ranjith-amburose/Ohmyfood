@@ -20,7 +20,7 @@ the user is redirected to the menu page.
 # Graphic Effects & Animiations
 
 # Loader:
--On landing, the loader covers the whole screen for 3 seconds
+- On landing, the loader covers the whole screen for 3 seconds
 
 # Buttons:
 - When hovering, the background color of the main button will lighten slightly.

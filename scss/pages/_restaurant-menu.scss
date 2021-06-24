@@ -71,7 +71,7 @@
         }
 
         .menu-list{
-          @include flex-start;
+          @include flex-end;
           margin: 10px 0px;
           padding: 30px 0px;
           background-color: $bg-color;

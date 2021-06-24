@@ -11,7 +11,7 @@
   #logo-1{
     margin: 20px 90px;
     height: 3em;
-    width: 250px;
+    width: 200px;
   }
 
   .logo-nav{
@@ -81,6 +81,7 @@
           position: relative;
           overflow: hidden;
           animation: Slide-In 3s ease-in-out;
+         
 
           .description{
             padding-left: 10px;
@@ -106,8 +107,10 @@
             height: 100%;
             width: 20%;
             top: 0px;
-            border-radius: 0px 20px 20px 0px;
             right: -90px;
+            border-radius: 0px 20px 20px 0px;
+            
+           
           }//check  
 
           .WrapIcon i{
@@ -118,6 +121,7 @@
 
        &:hover {
         cursor: pointer;
+       
 
         .description{
           width: 70%;
@@ -133,8 +137,22 @@
           transition-duration: 1.2s;
         }//.WrapIcon i 
 
+        :after{
+          .check{
+            right: -90px;
+            
+          }//.check
+  
+           .description{
+            padding-left: 10px;
+            width: 85%;
+          } //description
+        }// :::AFTER - Div.menu-list:after
+
       } //hover
       }//.menu-list
+
+    
       
        //Menu List Animiation
        .menu-list:nth-child(1){

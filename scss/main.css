@@ -271,7 +271,7 @@ h6 {
 }
 
 .main-button {
-  padding: 15px 20px;
+  padding: 15px 10px;
   margin: 20px;
   border-radius: 30px;
   background-image: -webkit-gradient(linear, right bottom, left top, from(#9356dc), color-stop(#b35cdc), color-stop(#cf64dc), color-stop(#e86edb), to(#ff79da));
@@ -283,6 +283,7 @@ h6 {
           box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3);
   cursor: pointer;
   border: none;
+  font-size: 12px;
   width: 50%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -340,8 +341,8 @@ h6 {
 
 #works span {
   position: absolute;
-  top: 60px;
-  left: 25px;
+  top: 55px;
+  left: 15px;
   padding: 15px 20px;
   background-color: #9356DC;
   border-radius: 50%;
@@ -350,12 +351,13 @@ h6 {
 
 #works .fas {
   padding-right: 10px;
+  padding-bottom: 10px;
   font-size: 25px;
 }
 
 button {
   padding: 30px 50px;
-  margin: 40px 0px;
+  margin: 30px 0px;
   background-color: #dadada;
   border-radius: 20px;
   -webkit-box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3);
@@ -377,7 +379,7 @@ button {
           align-items: flex-start;
   -ms-flex-line-pack: start;
       align-content: flex-start;
-  font-size: 16px;
+  font-size: 12.5px;
   border: none;
   width: 80%;
 }
@@ -431,7 +433,7 @@ button:hover .fas {
   -ms-flex-line-pack: center;
       align-content: center;
   padding: 20px 120px;
-  margin: 40px 0px;
+  margin: 30px 0px;
   border-radius: 30px;
   background-image: -webkit-gradient(linear, right bottom, left top, from(#9356dc), color-stop(#b35cdc), color-stop(#cf64dc), color-stop(#e86edb), to(#ff79da));
   background-image: linear-gradient(to left top, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da);
@@ -921,7 +923,7 @@ button:hover .fas {
     padding-bottom: 10px;
     margin-bottom: 40px;
     border-radius: 20px;
-    width: 85%;
+    width: 80%;
     -webkit-box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3);
             box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3);
     -webkit-transition: all 0.9s ease-in-out;
@@ -935,7 +937,7 @@ button:hover .fas {
   section .restaurant span {
     position: absolute;
     top: 20px;
-    left: 255px;
+    left: 65%;
     background-color: #99E2D0;
     padding: 15px 30px;
     color: #1b6150;
@@ -964,7 +966,7 @@ button:hover .fas {
   }
   section .restaurant .resto-info h4, section .restaurant .resto-info h5 {
     padding: 0px 0px 5px 0px;
-    width: 270px;
+    width: 210px;
   }
   section .restaurant .resto-info .heart-trnas i.far.fa-heart.fa-lg.fa-2x.full_heart {
     -webkit-transform: translate(35px, 0px);
@@ -2584,7 +2586,7 @@ button:hover .fas {
         align-content: center;
   }
   #logo-1 {
-    margin: 20px 90px;
+    margin: 20px 80px;
     height: 3em;
     width: 200px;
   }

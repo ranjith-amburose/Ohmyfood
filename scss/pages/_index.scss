@@ -121,7 +121,7 @@ h3 {
     
     h4, h5{
       padding: 0px 0px 5px 0px;
-      width: 265px;
+      width: 270px;
     }
     //Index Page - Heart Icons
     .heart-trnas{
@@ -245,7 +245,9 @@ h3 {
       margin: 15px;
     }
   }//#works
-
+  #restaurant h3{
+    padding-right: 20px;
+  }
   #resto{
     display: flex;
     flex-direction: row;

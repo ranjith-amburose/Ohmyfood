@@ -271,7 +271,7 @@ h6 {
 }
 
 .main-button {
-  padding: 25px 20px;
+  padding: 15px 20px;
   margin: 20px;
   border-radius: 30px;
   background-image: -webkit-gradient(linear, right bottom, left top, from(#9356dc), color-stop(#b35cdc), color-stop(#cf64dc), color-stop(#e86edb), to(#ff79da));
@@ -964,7 +964,7 @@ button:hover .fas {
   }
   section .restaurant .resto-info h4, section .restaurant .resto-info h5 {
     padding: 0px 0px 5px 0px;
-    width: 265px;
+    width: 270px;
   }
   section .restaurant .resto-info .heart-trnas i.far.fa-heart.fa-lg.fa-2x.full_heart {
     -webkit-transform: translate(35px, 0px);
@@ -1127,6 +1127,9 @@ button:hover .fas {
   }
   .wrapper #works button {
     margin: 15px;
+  }
+  .wrapper #restaurant h3 {
+    padding-right: 20px;
   }
   .wrapper #resto {
     display: -webkit-box;
